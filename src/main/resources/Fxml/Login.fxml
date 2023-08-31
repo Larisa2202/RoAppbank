@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@Styles/login.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.roappbanking.Controllers.LoginController">
+   <VBox prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container" stylesheets="@Styles/login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <FontAwesomeIconView fill="#bcacba" glyphName="BANK" size="50" />
+      <Text fill="#8771a1" strokeType="OUTSIDE" strokeWidth="0.0" text="Ro App Banking" textAlignment="CENTER">
+         <font>
+            <Font name="Ebrima Bold" size="41.0" />
+         </font>
+      </Text>
+   </VBox>
+   <VBox layoutX="226.0" layoutY="17.0" prefHeight="365.0" prefWidth="360.0" styleClass="login_form_container">
+      <Label id="choice-prompt-text" text="Choose your account type" />
+      <ChoiceBox fx:id="acc_selector" prefHeight="27.0" prefWidth="95.0" styleClass="account_selector" />
+      <Label fx:id="payee_address_lbl" text="Payee address">
+         <graphic>
+            <FontAwesomeIconView glyphName="USER" />
+         </graphic></Label>
+      <TextField fx:id="payee_address_fld" styleClass="input_field" />
+      <Label text="Password">
+         <graphic>
+            <FontAwesomeIconView glyphName="LOW_VISION" />
+         </graphic></Label>
+      <PasswordField fx:id="password_fld" styleClass="input_field" />
+      <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
+      <Label fx:id="error_lbl" styleClass="error_lbl" />
+   </VBox>
+</AnchorPane>

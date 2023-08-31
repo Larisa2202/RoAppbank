@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="633.0" prefWidth="814.0" styleClass="clients_container" stylesheets="@../Styles/Clients.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.roappbanking.Controllers.Admin.ClientsController">
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clients" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+    <ListView fx:id="clients_listview" layoutX="34.0" prefHeight="527.0" prefWidth="536.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="50.0" />
+</AnchorPane>

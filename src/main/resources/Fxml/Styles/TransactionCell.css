@@ -1,0 +1,35 @@
+
+.cell_container{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box,#000000,5,0,0,7);
+
+}
+.trans_icon_container{
+    -fx-background-color: #FFFFFF;
+    -fx-alignment: center;
+    -fx-spacing: 7;
+}
+.trans_date_lbl{
+    -fx-text-fill: #AAAAAA;
+
+}
+.trans_pAddress_lbl{
+    -fx-text-fill: #000000;
+
+}
+.cell_container Line{
+    -fx-stroke: #EEEEEE;
+
+}
+.trans_amount_lbl {
+    -fx-background-color: #3a1166;
+    -fx-background-radius: 2;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 5;
+
+}
+.trans_amount_lbl FontAwsomeIconView{
+    -fx-fill: #FFFFFF;
+
+}
